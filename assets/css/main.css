@@ -125,11 +125,11 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: rgba(255, 255, 255, 0.7);
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 16.5pt;
+		color: rgba(255, 255, 255, .9	);
+		font-family: "Myriad Pro", Arial, sans-serif;
+		font-size: 15pt;
 		font-weight: normal;
-		line-height: 1.75;
+		line-height: 1.4		
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -187,7 +187,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
-		font-weight: bold;
+		font-weight: normal: ;
 		line-height: 1.5;
 		margin: 0 0 0.5em 0;
 	}
@@ -198,7 +198,7 @@ input, select, textarea {
 		}
 
 	h1 {
-		font-size: 2.75em;
+		font-size: 1.75em;
 	}
 
 		h1.major {
@@ -230,11 +230,11 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1.1em;
+		font-size: 1.25em;
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 0.85em;
 	}
 
 	h5 {
@@ -2887,8 +2887,8 @@ input, select, textarea {
 		}
 
 	ul {
-		list-style: disc;
-		margin: 0 0 2em 0;
+		list-style: square outside;
+		margin: 0 0 0 0;
 		padding-left: 1em;
 	}
 
@@ -3516,7 +3516,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #194c6e;
+			background-color: #4F2A73;
 		}
 
 		.wrapper.style1-alt {
@@ -3784,7 +3784,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		background-color: #032c47;
+		background-color: #4F2A73;
 	}
 
 	#sidebar + #wrapper + #footer {
@@ -3800,16 +3800,16 @@ input, select, textarea {
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: rgba(255, 255, 255, 0..5);
 	}
-
+	
 		#footer > .inner a:hover {
 			border-bottom-color: transparent;
 		}
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: rgba(255, 255, 255, 0.5);
 
 	}
 
