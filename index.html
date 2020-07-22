@@ -10,6 +10,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://use.typekit.net/bqt6dqc.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<!-- <link rel="icon" href="favicons/favicon.ico" type="image/x-icon" /> -->
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
@@ -23,13 +27,12 @@
 						<ul>
 							<li></li>
 							<li><a href="#intro">&nbsp;Home <i class="fa fa-home"></i></a></li>
-							<li><a href="#resources">Resources <i class="fa fa-clipboard-list"></i></a></li>
+							<!-- <li><a href="#resources">Resources <i class="fa fa-clipboard-list"></i></a></li>
 							<li><a href="#lectures">Lectures <i class="fa fa-chalkboard-teacher"></i></a></li>
 							<li><a href="#assignments">Assignments <i class="fa fa-laptop-code"></i></a></li>
 							<li><a href="#section">PAPERS&nbsp; <i class="fa fa-hand-holding-heart"></i></a></li>
-							<li><a href="#hours">TA Hours <i class="fa fa-bug"></i></a></li>
+							<li><a href="#hours">TA Hours <i class="fa fa-bug"></i></a></li> -->
 							<li><a href="#staff">Staff <i class="fa fa-user"></i></a></li>
-                            <li><a href="https://piazza.com/brown/fall2020/cs1951V">Piazza <i class="fa fa-question"></i></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -61,71 +64,167 @@
 <p>The course will be co-taught Andy van Dam and Norm  Meyrowitz, assisted by Rosemary Simpson. Andy is most well-known for computer  graphics, so you may not realize he co-created one of the first hypertext  systems and interactive screen-based word processors in the late 1960s. Norm was  an HTA for Andy’s intro course back in the Cretaceous days,&nbsp; so he knows the ropes. He later was  Co-Director of Brown's Institute for Research in Information and Scholarship (IRIS).  IRIS created Intermedia -- one of the best-known hypertext systems in the late  1980s - which influenced the development of the Web. He went on to be President  of Products at Macromedia (acquired by Adobe) where he oversaw the design and  development dozens of products like Dreamweaver, Flash, Director. Rosemary is a  hypertext information designer who created the Gateway hypertext system in the  mid-1980s at Lisp Machines, Inc.</p>
 <p>Feel free to contact Andy (<a href="mailto:avd@cs.brown.edu">avd@cs.brown.edu</a>), Norm (<a href="mailto:nkm@brown.edu">nkm@brown.edu</a>, Phone/Text 415-505-9115, or  Rosemary (<a href="mailto:Rosemary_Simpson@brown.edu">Rosemary_Simpson@brown.edu</a>)  if you have any questions about this stil-very-much-under-construction course. We may not be done with all of the course design, but we do know it will be engaging and fun!</p>
 <p>This is a pre-alpha version of the Syllabus:</p>
-<p>
- <h4><ul><li>WEEK 1<br>
-  1.&nbsp;&nbsp;Overview<br>
-  2.&nbsp;&nbsp;Syllabus<br>
-  3.&nbsp;&nbsp;Assignments<br>
-  4.&nbsp;&nbsp;Terminology<br>
-	 5.&nbsp;&nbsp;Pre-Computer  (Analog) Hypertext/Information Management</ul></li></h4>
+
+<div class="list-group" id="week-list"></div>
+
+<!-- Hide For Now -->
+<script>
+	// <div class="list-group">
+
+	// 	<!-- Week 1 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 1</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				1.Overview<br>
+	// 				2.Syllabus<br>
+	// 				3.Assignments<br>
+	// 				4.Terminology<br>
+	// 				5.Pre-Computer  (Analog) Hypertext/Information Management
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 2 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 2</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				6.Bridging  Between Analog and Digital<br>
+	// 				7.Dimensions  of Hypertext Systems<br>
+	// 				8.The  beginnings of computer-based hypertext – the 1960s and 1970s
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 3 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 2</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				9.Basic  Hypertext Features<br>
+	// 				10a.1980s and  Early 1990s (with Demos) - Part I
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 4 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 4</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				10b.1980s and  Early 1990s (with Demos) - Part II<br>
+	// 				11. The  Internet Years
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 5 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 5</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				12a.Advanced Hypertext Features
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 6 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 6</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				12b.Advanced  Hypertext Features (cont.)
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 7 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 7</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				13.Markup,  Design Patterns, Structure, and Semantics<br>
+	// 		14.Digital  Libraries
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 8 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 8</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				15.Architecture  of Hypertext Systems
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 9 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 9</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				16.21st  Century Systems – Demos and hands-on
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 10 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 10</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				17.Applications of Hypertext
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 11 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 11</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				18.Where We  Are Now?<br>
+	// 				19.Enduring  Categories in Hypertext Research and Development
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 12 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 12</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				20.Societal  Implications
+	// 			</p>
+	// 	</div>
+
+	// 	<!-- Week 13 -->
+	// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
+	// 		<div class="d-flex w-100 justify-content-between">
+	// 			<h4 class="mb-1">Week 13</h4>
+	// 		</div>
+	// 			<p class="mb-1">
+	// 				21.  Final  Project Presentations
+	// 			</p>
+	
+	  </script>
+
+</div>
+		
+<p> *There will be some short papers for the course. 
+	Before you freak out and decide not to take the course because of that, consider the following. 
+	If you go out into the real world and work for a company (startup or established) to get your ideas heard and adopted you will have to be great at writing crisp, easily-understandable, focused documents. 
+	They may be documents describing your high-level ideas, a competitive analysis of other products, a requirements, a product spec, briefs for marketing and PR folks, draft press releases, etc. 
+	The short papers will help you learn these skills. 
+	If you go into academia, you will be writing project proposals, grants, abstracts for conferences, papers for journals, etc. and the ones that are better written have a higher chance of getting accepted. 
+	We promise to read and critique your papers, so you will get real feedback, not just a grade. 
+	Consider writing these short papers a feature, not a bug. People who haven’t taken this course will be jealous! 
 </p>
-<p>
-  <h4><ul><li>WEEK 2<br>
-    6.&nbsp;&nbsp;Bridging  Between Analog and Digital<br>
-    7.&nbsp;&nbsp;Dimensions  of Hypertext Systems<br>
-	  8.&nbsp;&nbsp;The  beginnings of computer-based hypertext – the 1960s and 1970s</ul></li></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 3<br>
-    9.&nbsp;&nbsp&nbsp;&nbsp;&nbsp;Basic  Hypertext Features<br>
-    10a.&nbsp;1980s and  Early 1990s (with Demos) - Part I</ul></li></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 4<br>
-    10b.&nbsp;1980s and  Early 1990s (with Demos) - Part II<br>
-    11.&nbsp; &nbsp;&nbsp;The  Internet Years</ul></li>
-  </h4>
-</p>
-<p>
- <h4><ul><li>WEEK 5<br>
-    12a.&nbsp;Advanced Hypertext  Features</li></ul></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 6<br>
-    12b.&nbsp;Advanced  Hypertext Features (cont.)</li></ul></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 7<br>
-    13.&nbsp;&nbsp;Markup,  Design Patterns, Structure, and Semantics<br>
-    14.&nbsp;&nbsp;Digital  Libraries</li></ul></h4>
-</p>
-<p>
- <h4><ul><li>WEEK 8<br>
-    15.&nbsp;&nbsp;Architecture  of Hypertext Systems</li></ul></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 9<br>
-    16.&nbsp;&nbsp;21st  Century Systems – Demos and hands-on</li></h4>
-</p>
-<p>
-  <h4><li>WEEK 10<br>
-    17.&nbsp;&nbsp;Applications  of Hypertext</li></ul></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 11<br>
-    18.&nbsp;&nbsp;Where We  Are Now?<br>
-    19.&nbsp;&nbsp;Enduring  Categories in Hypertext Research and Development</li></ul></h4>
-</p>
-<p>
-  <h4><ul><li>WEEK 12<br>
-    20.&nbsp;&nbsp;Societal  Implications</li></h4></ul>
-</p>
-<p>
-  <h4><ul><li>WEEK 13<br>
-    21.  Final  Project Presentations</li></ul></h4>
-</p>
-	<p>*There will be some short papers for the course. Before you freak out and decide not to take the course because of that, consider the following. If you go out into the real world and work for a company (startup or established) to get your ideas heard and adopted you will have to be great at writing crisp, easily-understandable, focused documents. They may be documents describing your high-level ideas, a competitive analysis of other products, a requirements, a product spec, briefs for marketing and PR folks, draft press releases, etc. The short papers will help you learn these skills. If you go into academia, you will be writing project proposals, grants, abstracts for conferences, papers for journals, etc. and the ones that are better written have a higher chance of getting accepted. We promise to read and critique your papers, so you will get real feedback, not just a grade. Consider writing these short papers a feature, not a bug. People who haven’t taken this course will be jealous!
-</p>
+
+
 <p>
     **In terms of participation, our  intent is to have an interchange, not an inquisition. It should feel very much like going to a brainstorming meeting in a research group or a company, so this will provide good experience for interacting in those types of environments.</p>
 </body>
@@ -1196,6 +1295,59 @@
 
 			</div>
 */</script>
+<section id="staff">
+	<h1>Staff Coming Soon!</h1>
+	<!-- <div class="inner">
+		<h2>Staff</h2>
+		<blockquote>“The people person’s paper people!”</blockquote>
+		<hr>
+		<h3>Professors</h3>
+		<div class="prof-container">
+				<div style="width: 30%; height: auto;"><img src="images/staff/avd.jpg" style="width: 100% !important; height: auto !important; margin: 0 auto;"/></div>
+				<div class="andy-blurb">
+					<div class="name">Andy (avd)</div>
+					<div class="desc">I’m originally from the Netherlands. My CS specialty is Computer Graphics, especially pen- and touch-computing. I’m a foodie and love the outdoors: hiking and backpacking (especially in the Grand Canyon), mountain- and road-biking, and kayaking.</div>
+				</div>
+		</div>
+
+		<hr>
+		<h3>Head Teaching Assistants</h3>
+		<div class="hta-container">
+			<div style="width: 100% !important; height: auto !important; margin: 0 auto;"><img src="images/staff/htaphoto.jpg" style="max-width: 100% !important; height: auto !important;"/></div>
+			<div class="hta-blurbs">
+				<div class="name">Lucy (lreyes1)</div>
+				<div class="desc">Hello! I am a junior from Monterrey, Mexico  concentrating in Computer Science. CS15 is my favorite class at Brown, and I hope you will like it as much as I did! In my free time, I love to watch The Office, bake, spend time with my friends, and dance. Welcome to CS15! :) </div>
+				<div class="name">Noah (nkorotze)</div>
+				<div class="desc">I'm a senior from LA studying electrical engineering with a focus in computer science. In my spare time I like to run as fast as I can in a straight line over and over. Come talk to me about sports, books, dogs, or anything else! (or CS, I guess)</div>
+				<div class="name">Taylor (wauten)</div>
+				<div class="desc">Hi! I'm a senior from Connecticut who switched my concentration from Political Science to Computer Science after taking CS15. You can typically find me cooking, looking for an excuse to get a Lime scooter, or performing marriage ceremonies. Always feel free to reach out, and enjoy CS15! (he/him/his)</div>
+				<div class="name">Angel (arodri36)</div>
+				<div class="desc">Hello everyone! I'm a Junior from Union City, NJ concentrating in Computer Science! I'm a Diversity &amp; Inclusion advocate, a member of the Mosaic+ community, as well as a returning RPL. I am always open to answer any questions so feel free to contact me! In my free time I like to take pictures, watch bad reality TV shows, get overly competitive over games, and joke around with friends. Hope you all have a great semester, we are here for you!</div>
+				<div class="name">Julie (jwang73)</div>
+				<div class="desc">Hi! I'm a junior studying Computer Science, spiritually from Beijing and legally from Toronto. If you can't find me, I'm most likely hiding in a cardboard box; I also sometimes eat pancakes.</div>
+			</div>
+
+		</div>
+
+<div class="ta-block">
+	<img src="images/staff/zach.jpg"/>
+	<div class="ta-info">
+		<div class="name">Zach (zmothner)</div>
+		<div class="desc">Hi! I'm a sophomore from New York City studying Computer Science and Visual Art. Outside of class, I'm a BRYTE tutor, and I'm constantly drinking coffee. I love meeting new people so come talk to me!</div>
+	</div>
+</div>
+
+<div class="ta-block">
+	<img src="images/staff/zoe.jpg"/>
+	<div class="ta-info">
+		<div class="name">Zoe (zbeckman)</div>
+		<div class="desc">I'm a junior from Los Angeles concentrating in Neuroscience and CS. Easy to identify from the pink converse or hot-cheetoh stains.</div>
+	</div>
+</div>
+</div>
+
+</div> -->
+</section>
 
 		<!-- Footer -->
 			<footer id="footer" class="wrapper style1-alt">
@@ -1214,6 +1366,8 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/index.js"></script>
 
 	</body>
 </html>
+</div>
