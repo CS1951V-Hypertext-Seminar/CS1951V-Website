@@ -5,8 +5,8 @@ on:
       - master
 jobs:
 
-  build:
-    name: Build
+  deploy:
+    name: Deploy via SCP
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -18,3 +18,17 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: "*"
         target: "/gpfs/main/authen/sys/web/cs/web/courses/cs1951v"
+  
+  permissions:
+    name: Set Permissions
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        script: |
+          cd /gpfs/main/authen/sys/web/cs/web/courses
+          chmod 775 -R cs1951v
