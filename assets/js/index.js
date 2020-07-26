@@ -1,14 +1,32 @@
+const readings = [
+  {
+    'title': 'As We May Think',
+    'week': 1,
+    'link': 'https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/',
+    'theme': ''
+  }
+]
+
+const week_to_readings = {}
+readings.forEach(val => {
+  if (val.week in week_to_readings) {
+    week_to_readings[val.week].push(val)
+  } else {
+    week_to_readings[val.week] = [val]
+  }
+})
+
 const weeks = [
     {
       "week": 1,
       "date": "9-10-2020",
       "topics": [
-          "Overview",
+          "Introduction",
           "Syllabus", 
           "Assignments",
           "Terminology",
           "Pre-Computer"
-        ]
+      ]
     },
     {
       "week": 2,
@@ -75,6 +93,21 @@ const weeks = [
         "topics": ["Final  Project Presentations"]
       }
   ]
+
+  // week is a number
+  function getReadings(week) {
+    let readingWrapper = document.createElement('div');
+    readingWrapper.classList.add("mb-1")
+
+    if (week_to_readings[week])
+     readingWrapper.innerHTML += `<br><h5 class="mb-1"> Readings </h5>`
+
+    week_to_readings[week]?.map(reading => {
+      readingWrapper.innerHTML += `<a href=${reading.link} target="_blank"> ${reading.title} </a><br>`
+    })
+
+    return readingWrapper
+  }
 	
 weeks.forEach(week => {
         let weekListItem = document.createElement('div');
@@ -92,7 +125,7 @@ weeks.forEach(week => {
          console.log(topics)
         //  let topics = document.createElement('div');;
          let topicsElem = document.createElement('p');
-            topicsElem.classList.add("mb-1")
+          topicsElem.classList.add("mb-1")
          topicsElem.innerHTML = topics
 
          
@@ -102,20 +135,10 @@ weeks.forEach(week => {
         
          weekListItem.appendChild(titleElem)
          weekListItem.appendChild(topicsElem)
+         const readings = getReadings(week.week)
+         console.log(readings)
+         weekListItem.appendChild(readings)
+
         document.getElementById("week-list").appendChild(weekListItem);
 
 })
-
-
-// 	<div class="list-group-item list-group-item-action flex-column align-items-start">
-	// 		<div class="d-flex w-100 justify-content-between">
-	// 			
-	// 		</div>
-	// 			<p class="mb-1">
-	// 				1.Overview<br>
-	// 				2.Syllabus<br>
-	// 				3.Assignments<br>
-	// 				4.Terminology<br>
-	// 				5.Pre-Computer  (Analog) Hypertext/Information Management
-	// 			</p>
-	// 	</div>
