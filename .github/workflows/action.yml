@@ -17,4 +17,4 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         source: "*"
-        target: "~/CS1951V-Website"
+        target: "/gpfs/main/authen/sys/web/cs/web/courses/cs1951"
