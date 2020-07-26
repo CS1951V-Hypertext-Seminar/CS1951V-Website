@@ -31,5 +31,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-          cd /gpfs/main/authen/sys/web/cs/web/courses
+          cd "/gpfs/main/authen/sys/web/cs/web/courses"
           chmod 775 -R cs1951v
