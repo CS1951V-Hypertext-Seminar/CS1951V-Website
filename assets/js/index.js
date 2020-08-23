@@ -17,6 +17,16 @@ readings.forEach(val => {
 })
 
 const weeks = [
+	 {
+            "week": "1",
+            "date": "9/9/20",
+            "topics": "Who Are We?\r\nLearning Objectives\r\nSeminar Mechanics\r\nAssignments & Grading\r\nWhy Are We Teaching This Seminar\r\nOrigins of Data and Information Processing\r\nWhat is Hypertext/Hypermedia?"
+        },
+        {
+            "week": "2",
+            "date": "9/18/20",
+            "topics": "Hypertext Forerunners\r\nWhat Sparked Digital Hypertext?\r\nFrom Number Crunching to Text Processing\r\nHypertext Terminology\r\nDigital Hypertext Pioneers"
+        },
     {
       "week": 1,
       "date": "9-10-2020",
