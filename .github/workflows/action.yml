@@ -31,5 +31,5 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
-        chmod +x permission.sh
-        ./permission.sh
+          chmod +x permission.sh
+          ./permission.sh
