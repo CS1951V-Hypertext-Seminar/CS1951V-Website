@@ -2,4 +2,4 @@
  
 Hypertext/Hypermedia: The Web Was Not the Beginning and the Web Is Not the End   
 
-TEST STRING 2: Permissions and Copy
+TEST STRING 2: Permissions in this directory and Copy.

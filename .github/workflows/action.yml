@@ -17,7 +17,7 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: "*"
         target: "/web/cs/web/courses/cs1951v"
-        
+
   permissions:
     name: Set Permissions
     needs: [deploy]
@@ -29,5 +29,5 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        script: sh ./permission.sh
+        script: sh /web/cs/web/courses/cs1951v/permission.sh
   
