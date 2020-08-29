@@ -17,16 +17,17 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         source: "*"
         target: "/web/cs/web/courses/cs1951v"
-  # permissions:
-  #   name: Set Permissions
-  #   # needs: [deploy]
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #   - name: executing remote ssh commands using password
-  #     uses: appleboy/ssh-action@master
-  #     with:
-  #       host: ${{ secrets.HOST }}
-  #       username: ${{ secrets.USERNAME }}
-  #       password: ${{ secrets.PASSWORD }}
-  #       script: sh ./permission.sh
+        
+  permissions:
+    name: Set Permissions
+    needs: [deploy]
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        script: sh ./permission.sh
   
