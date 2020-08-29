@@ -16,6 +16,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         script: |
+          cd /web/cs/web/courses/cs1951v
           chmod +x permission.sh
           ./permission.sh
 
