@@ -15,10 +15,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
-        script: |
-          cd /web/cs/web/courses/cs1951v
-          chmod +x permission.sh
-          ./permission.sh
+        script: sh ./permission.sh
 
 #   deploy:
 #     name: Deploy via SCP
