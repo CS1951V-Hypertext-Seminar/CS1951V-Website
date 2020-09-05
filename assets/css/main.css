@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 
-/*
+
 th, td {
 	padding: 15px;
   }
@@ -9,7 +9,7 @@ th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
   }
-
+/*
   table tr:nth-child(even) {
 	background-color: #eee;
   }
