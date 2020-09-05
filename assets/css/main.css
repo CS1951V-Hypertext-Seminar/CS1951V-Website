@@ -9,14 +9,13 @@ th, td {
 	border: 1px solid black;
 	border-collapse: collapse;
   }
-/*
+
   table tr:nth-child(even) {
-	background-color: #eee;
+	background-color: #fff;
   }
   table tr:nth-child(odd) {
 	background-color: #fff;
   }
-*/
 
 /*
 	Hyperspace by HTML5 UP
