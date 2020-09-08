@@ -1,6 +1,6 @@
 @import url(fontawesome-all.min.css);
 
-/*
+
 th, td {
 	padding: 15px;
   }
@@ -10,13 +10,13 @@ th, td {
 	border-collapse: collapse;
   }
 
-  table tr:nth-child(even) {
+  /* table tr:nth-child(even) {
 	background-color: #eee;
   }
   table tr:nth-child(odd) {
 	background-color: #fff;
-  }
-*/
+  } */
+
 
 /*
 	Hyperspace by HTML5 UP
