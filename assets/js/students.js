@@ -124,7 +124,7 @@ let students = [
     {
         name: 'Deniz',
         bio: 'hashmaps and bananas',
-        image: "IMG_7275.jpg",
+        image: "IMG_7276.jpg",
         timezone: 0
     },
     {
@@ -132,6 +132,12 @@ let students = [
         bio:'First friend was a chicken',
         timezone: 12,
         image: 'geireann.jpg'
+    },
+    {
+        name: "Matt Warren Bruinooge",
+        bio: "at large",
+        image: "img.png",
+        timezone: 0,
     }
 ]
 
